@@ -17,7 +17,7 @@ public interface User4DAO {
 	
 	public void insertUser4(User4VO vo);
 	
-	public User4VO selectUser4(int seq);
+	public User4VO selectUser4(String seq);
 	
 	public List<User4VO> selectUser4s();
 	

@@ -21,13 +21,12 @@
 				<th>휴대폰</th>			
 				<th>관리</th>			
 			</tr>
-			
-				</tr>
-				<tr th:each="user:${users}">
+		
+			<tr th:each="user:${users}">
 				<td>[[${user.uid}]]</td>
 				<td>[[${user.name}]]</td>
 				<td>[[${user.birth}]]</td>
-				<td th:text=${user.gender eq "1" ? "남":"여"}>성별</td>
+				<td th:text=${user.gender}>성별</td>
 				<td th:text=${user.age}>나이</td>
 				<td th:text=${user.addr}>주소</td>
 				<td th:text=${user.hp}>휴대폰</td>

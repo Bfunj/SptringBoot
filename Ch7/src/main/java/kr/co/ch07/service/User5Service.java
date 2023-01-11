@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import kr.co.ch07.dao.User5DAO;
+import kr.co.ch07.repository.User5Repo;
 import kr.co.ch07.vo.User5VO;
 
 
@@ -14,6 +15,9 @@ public class User5Service {
 
 	@Autowired
 	private User5DAO dao;
+	
+	@Autowired
+	private User5Repo repo;
 	
 	public void insertUser5(User5VO vo) {
 		dao.insertUser5(vo);
