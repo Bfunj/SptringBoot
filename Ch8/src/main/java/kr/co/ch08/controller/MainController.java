@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class MainController {
 
-	@GetMapping(value = {"/","/index"})
+	@GetMapping(value = {"/", "/index"})
 	public String index() {
 		return "/index";
 	}
@@ -15,24 +15,29 @@ public class MainController {
 	public String adminSuccess() {
 		return "/admin/success";
 	}
+	
 	@GetMapping("/manager/success")
 	public String managerSuccess() {
 		return "/manager/success";
 	}
+	
 	@GetMapping("/member/success")
 	public String memberSuccess() {
 		return "/member/success";
 	}
+	
 	@GetMapping("/guest/success")
 	public String guestSuccess() {
 		return "/guest/success";
 	}
+	
 	@GetMapping("/guest/login")
 	public String guestLogin() {
 		return "/guest/login";
 	}
+	
 	@GetMapping("/guest/loginSuccess")
-	public String guestloginSuccess() {
+	public String guestLoginSuccess() {
 		return "/guest/loginSuccess";
 	}
 }
